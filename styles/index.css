@@ -1,18 +1,17 @@
 @tailwind base;
-
-/* Write your own custom base styles here */
-
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
-
-/* Write you own custom component styles here */
-.btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
-
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
 
-/* Your own custom utilities */
+:root {
+	--primary-color: #4299cf;
+}
+* {
+	font-family: 'Inter var', Arial, serif;
+}
+.btn-theme {
+	@apply bg-blue-500 font-bold text-white px-4 py-2 rounded; 
+	background-color: #ffffff33;
+}
+.bg-theme {
+	background-color: var(--primary-color);
+}
